@@ -14,8 +14,7 @@ function helloEmail(){
 function send(toSend){
  	console.log(JSON.stringify(toSend, null, 2));
 
-	//var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
-	var sg = require('sendgrid')('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');
+	var sg = require('sendgrid')(process.env.SENDGRID_API_KEY);
 
 	/*
 	var request = sg.emptyRequest({
